@@ -1,0 +1,1 @@
+# C++ test targets are added in Phase 1, once GoogleTest is configured.

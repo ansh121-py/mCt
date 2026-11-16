@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "llvm-mingw-debug",
+      "displayName": "LLVM-MinGW Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
+        "CMAKE_MAKE_PROGRAM": "C:/Users/883182/ninja-win/win64ninja.exe"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "llvm-mingw-debug",
+      "configurePreset": "llvm-mingw-debug"
+    }
+  ]
+}
